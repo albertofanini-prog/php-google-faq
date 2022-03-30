@@ -82,6 +82,15 @@
             <a>Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato.</p>
             '
         ],
+        [
+            'ask' => '<h3>Come faccio a rimuovere informazioni su di me dai risultati di ricerca di Google?</h3>',
+            'answer' => '<p>I risultati di ricerca di Google rispecchiano i contenuti pubblicamente disponibili sul Web. 
+            I motori di ricerca non possono rimuovere i contenuti direttamente dai siti web, quindi rimuovere risultati di ricerca da Google non consente di rimuovere i contenuti dal Web. 
+            Se desideri rimuovere qualcosa dal Web, devi contattare il <a>webmaster</a> del sito su cui sono pubblicati i contenuti e chiedergli di apportare una modifica. 
+            Inoltre, se, ai sensi delle leggi europee per la protezione dei dati, desideri richiedere la rimozione di determinate informazioni su di te visualizzate nei risultati di ricerca di Google, <a>fai clic qui</a>. 
+            Una volta che i contenuti saranno stati rimossi e che Google avrà rilevato l\'aggiornamento, le informazioni non verranno più visualizzate nei risultati di ricerca di Google. In caso di una richiesta di rimozione urgente, è inoltre possibile <a>visitare la nostra pagina di assistenza per avere ulteriori informazioni</a>.</p>
+            '
+        ],
     ]
 ?>
 <!DOCTYPE html>
