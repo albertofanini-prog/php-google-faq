@@ -1,5 +1,13 @@
 <?php
     var_dump('Google faq');
+
+    $links = [
+        'Introduzione',
+        'Norme sulla privacy',
+        'Termini di servizio',
+        'Tecnologie',
+        'Domande frequenti'
+    ]
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +39,21 @@
             </div>
         </div>
         <div class="navbar">
-
+            <div class="links">
+                <ul>
+                    <?php
+                        for ($i = 0; $i < count($links); $i++){
+                            ?>
+                            <li>
+                                <?php
+                                    echo $links[$i]
+                                ?>
+                            </li>
+                            <?php
+                        }
+                    ?>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
