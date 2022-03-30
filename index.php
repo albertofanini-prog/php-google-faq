@@ -1,5 +1,5 @@
 <?php
-    var_dump('Google faq');
+    // var_dump('Google faq');
 
     $links = [
         'Introduzione',
@@ -91,7 +91,22 @@
             Una volta che i contenuti saranno stati rimossi e che Google avrà rilevato l\'aggiornamento, le informazioni non verranno più visualizzate nei risultati di ricerca di Google. In caso di una richiesta di rimozione urgente, è inoltre possibile <a>visitare la nostra pagina di assistenza per avere ulteriori informazioni</a>.</p>
             '
         ],
-    ]
+        [
+            'ask' => '<h3>Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?</h3>',
+            'answer' => '<p>In alcuni casi sì. 
+            Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l\'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di <a>URL referrer</a>. 
+            Talvolta, l\'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. 
+            Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell\'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi.
+            Ulteriori informazioni sulla ricerca SSL sono disponibili <a>qui</a>. Le query di ricerca o le informazioni contenute nell\'URL referrer potrebbero essere disponibili mediante Google Analytics o un\'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all\' esatte parole chiave che hanno determinato il clic su un annuncio.</p>'
+        ],
+    ];
+
+    $footer_links = [
+        'Google',
+        'Tutto su Google',
+        'Privacy',
+        'Termini'
+    ];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -113,7 +128,7 @@
                     <img src="images/google_logo.svg" alt="">
                 </div>
                 <div class="explain">
-                    <span><a class="privacy" href="#">Privacy e termini</a></span>
+                    <span><a class="privacy" href="https://policies.google.com/">Privacy e termini</a></span>
                 </div>
             </div>
             <div class="tools">
@@ -158,7 +173,33 @@
         </div>
     </main>
     <footer>
-
+        <div class="footer_container">
+            <div class="footer_links">
+                <ul>
+                    <?php
+                        for ($i = 0; $i < count($footer_links); $i++){
+                            ?>
+                            <li>
+                                <?php
+                                echo $footer_links[$i]
+                                ?>
+                            </li>
+                            <?php
+                        }
+                    ?>
+                </ul>
+            </div>
+            <div class="footer_form">
+                <select name="language" id="">
+                    <option value="1">Italian</option>
+                    <option value="2">English</option>
+                    <option value="3">Portuguese</option>
+                    <option value="4">Freancaise</option>
+                    <option value="5">Espanol</option>
+                    <option value="6">Deutsche</option>
+                </select>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
