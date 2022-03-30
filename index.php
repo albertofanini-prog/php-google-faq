@@ -48,7 +48,40 @@
 
             <p><a>Scopri</a> quali misure adottiamo per garantire protezione e sicurezza alle tue informazioni personali, lasciando a te il controllo.</p>
             '
-        ]
+        ],
+        [
+            'ask' => '<h3>Perché il mio account è associato a un paese?</h3>',
+            'answer' => 
+            '
+            <p>
+                Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:
+                    <ol class="ol">
+                        <li>
+                            La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti.
+                            Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
+                            <ul>
+                               <li>
+                                    Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell\'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
+                                </li>
+                                <li>
+                                    Google LLC, con sede negli Stati Uniti, per il resto del mondo.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.   
+                        </li>
+                    </ol>
+            </p>
+            <p>Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</p>
+            <h4>Stabilire il paese associato al tuo account</h4>
+            <p>Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato.
+            Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell\'ultimo anno.</p>
+            <p>I viaggi frequenti solitamente non influiscono sul paese associato al tuo account. Se ti trasferisci in un altro paese, potrebbe occorrere circa un anno per aggiornare l\'associazione del paese.</p>
+            <p>Se il paese associato al tuo account non corrisponde al tuo paese di residenza, il motivo potrebbe essere la differenza tra il paese in cui lavori e il paese in cui risiedi, l\'installazione di una rete privata virtuale (VPN) per mascherare il tuo indirizzo IP oppure la residenza vicino a un confine territoriale. 
+            <a>Contattaci</a> se ritieni che il paese associato al tuo account sia sbagliato.</p>
+            '
+        ],
     ]
 ?>
 <!DOCTYPE html>
