@@ -100,12 +100,20 @@
             Ulteriori informazioni sulla ricerca SSL sono disponibili <a>qui</a>. Le query di ricerca o le informazioni contenute nell\'URL referrer potrebbero essere disponibili mediante Google Analytics o un\'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all\' esatte parole chiave che hanno determinato il clic su un annuncio.</p>'
         ],
     ];
-
     $footer_links = [
         'Google',
         'Tutto su Google',
         'Privacy',
         'Termini'
+    ];
+    $languages = [
+        'Italiano',
+        'English',
+        'Francaise',
+        'Espanol',
+        'Deutsche',
+        'Portuguese',
+        'Chinese',
     ];
 ?>
 <!DOCTYPE html>
@@ -114,6 +122,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favIcon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -191,12 +200,17 @@
             </div>
             <div class="footer_form">
                 <select name="language" id="">
-                    <option value="1">Italian</option>
-                    <option value="2">English</option>
-                    <option value="3">Portuguese</option>
-                    <option value="4">Freancaise</option>
-                    <option value="5">Espanol</option>
-                    <option value="6">Deutsche</option>
+                    <?php
+                        for ($i = 0; $i < count($languages); $i++){
+                            ?>
+                            <option>
+                                <?php
+                                echo $languages[$i]
+                                ?>
+                            </option>
+                            <?php
+                        }
+                    ?>
                 </select>
             </div>
         </div>

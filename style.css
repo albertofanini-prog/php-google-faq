@@ -166,6 +166,7 @@ footer{
     list-style: none;
     gap: 20px;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .footer_form select{
